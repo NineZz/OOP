@@ -22,8 +22,8 @@ public class SimpleCalGUI {
         bn3 = new JButton("*");
         bn4 = new JButton("/");
 
-        p1.setLayout(new GridLayout(3, 1));
-        p2.setLayout(new GridLayout(1,3));
+        p1.setLayout(new GridLayout(4, 1));
+        p2.setLayout(new FlowLayout());
         p2.add(bn1);
         p2.add(bn2);
         p2.add(bn3);
@@ -40,4 +40,7 @@ public class SimpleCalGUI {
         f.setVisible(true);
     }
 
+    public static void main(String[] args) {
+        new SimpleCalGUI();
+    }
 }
